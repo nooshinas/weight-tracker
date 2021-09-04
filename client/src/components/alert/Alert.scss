@@ -1,0 +1,23 @@
+@import "./../../assets/styles/theme";
+
+.hide {
+  display: none;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 500px;
+  background-color: $error-color-light;
+  border: 1px solid $error-color;
+  border-radius: $border-radius;
+  text-align: left;
+  padding: $padding-md;
+  z-index: 9;
+
+  .close-btn {
+    margin: $margin-xs;
+    float: right;
+  }
+}
