@@ -1,0 +1,36 @@
+@import "./../../assets/styles/theme";
+
+.input {
+  position: relative;
+  margin: $margin-xs;
+
+  input {
+    width: 300px;
+    height: 24px;
+    border: 1px solid $border-color;
+    padding: $padding-xs;
+    border-radius: $border-radius;
+    color: $text-color;
+
+    &:focus {
+      border: 1px solid $border-color-dark;
+      outline: 0;
+    }
+
+    &[type="number"] {
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  &:after {
+    content: attr(data-suffix);
+    position: absolute;
+    z-index: 1;
+    right: 14px;
+    top: 10px;
+    transition: all 0.05s ease-in-out;
+  }
+}
