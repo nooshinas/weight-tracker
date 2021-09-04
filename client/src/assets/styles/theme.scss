@@ -1,0 +1,48 @@
+// Media queries breakpoints
+$screen-xs: 480px; // Extra small screen / phone
+$screen-sm: 576px; // Small screen / tablet
+$screen-md: 768px; // Medium screen / desktop
+$screen-lg: 992px; // Large screen / wide desktop
+$screen-xl: 1200px; // Extra large screen / full hd
+$screen-xxl: 1600px; // Extra extra large screen / large desktop
+
+$primary-color: #2929cc;
+$primary-color-light: #ededf9;
+$primary-color-dark: #00004e;
+
+$font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans",
+  "Helvetica Neue", sans-serif;
+
+// Background color for `<body>`
+$body-background: $primary-color-light;
+// Base background color for most components
+$component-background: #fff;
+
+$text-color: rgba(0, 0, 0, 0.65);
+$text-color-dark: rgba(0, 0, 0, 0.85);
+
+$heading-color: $primary-color-dark;
+
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 4px;
+$font-size-sm: 12px;
+
+$line-height-base: 1.5;
+
+$border-radius: 8px;
+$border-radius-sm: 4px;
+
+$base-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+$border-color: rgba(0, 0, 0, 0.1);
+
+// paddings
+$padding-lg: 24px; // containers
+$padding-md: 16px; // small containers and buttons
+$padding-sm: 12px; // Form controls and items
+$padding-xs: 8px; // small items
+
+// margin
+$margin-lg: 24px; // containers
+$margin-md: 16px; // small containers and buttons
+$margin-sm: 12px; // Form controls and items
+$margin-xs: 8px; // small items
