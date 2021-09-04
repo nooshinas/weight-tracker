@@ -1,0 +1,30 @@
+@import "./../../assets/styles/theme";
+.loading-overlay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $overlay-background;
+
+  .loading {
+    border: 4px solid $primary-color-light;
+    border-top: 4px solid $primary-color;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
