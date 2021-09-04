@@ -1,0 +1,60 @@
+@import "./../../assets/styles/theme";
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: $overlay-background;
+
+  .modal {
+    width: 50%;
+    margin: 0 auto;
+    background: $component-background;
+    box-shadow: $base-shadow;
+    border-radius: $border-radius;
+    min-width: 100px;
+    min-height: 100px;
+    padding: $padding-md;
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $border-color;
+      padding: $padding-sm 0;
+    }
+
+    .modal-body {
+      margin: 14px 0;
+    }
+
+    .close-btn {
+      color: $primary-color-dark;
+      font-size: 18px;
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+
+    @media screen and (max-width: calc(#{$screen-lg} - 1px)) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: calc(#{$screen-xs} - 1px)) {
+      width: 90%;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

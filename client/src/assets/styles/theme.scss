@@ -17,6 +17,8 @@ $font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans",
 $body-background: $primary-color-light;
 // Base background color for most components
 $component-background: #fff;
+// Overly background for modal, loading
+$overlay-background: rgba(0, 0, 0, 0.3);
 
 $text-color: rgba(0, 0, 0, 0.65);
 $text-color-dark: rgba(0, 0, 0, 0.85);
