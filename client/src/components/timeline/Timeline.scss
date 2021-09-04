@@ -1,0 +1,50 @@
+@import "./../../assets/styles/theme";
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: $margin-xl;
+    list-style-type: none;
+
+    .point {
+      min-width: 10px;
+      height: 10px;
+      background-color: $primary-color;
+      border-radius: 100%;
+      z-index: 1;
+      border: 2px solid $primary-color-light;
+      position: relative;
+      left: 1px;
+    }
+
+    .date,
+    .content {
+      display: flex;
+      width: 50%;
+      padding: $padding-sm;
+    }
+
+    .content {
+      flex-direction: row;
+    }
+
+    .date {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &:before {
+    background-color: $primary-color-light;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+  }
+}
