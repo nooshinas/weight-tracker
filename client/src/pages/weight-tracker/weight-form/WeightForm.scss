@@ -1,0 +1,15 @@
+@import "./../../../assets/styles/theme";
+
+.weight-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+
+  .submit-btn {
+    width: 318px;
+    height: 42px;
+    margin: $margin-xs;
+  }
+}
