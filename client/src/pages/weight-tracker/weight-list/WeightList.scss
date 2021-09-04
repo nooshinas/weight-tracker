@@ -1,0 +1,27 @@
+@import "./../../../assets/styles/theme";
+
+.content-container {
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $base-shadow;
+  padding: $padding-sm;
+  border-radius: $border-radius;
+
+  .action {
+    .btn-icon {
+      border: none;
+      background-color: transparent;
+      color: $primary-color;
+      margin: 0 $margin-xs;
+
+      &:hover {
+        color: $primary-color-dark;
+      }
+    }
+  }
+
+  @media screen and (max-width: calc(#{$screen-xs} - 1px)) {
+    min-width: 95%;
+  }
+}
