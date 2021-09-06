@@ -11,16 +11,14 @@ const main = async () => {
   dotenv.config();
 
   await createConnection({
-    type: "mysql",
-    name: process.env.DB_NAME,
+    type: "postgres",
     host: process.env.DB_HOST,
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    port: 3306 || process.env.DB_PORT,
+    port: 5432 || process.env.DB_PORT,
     database: process.env.DB_NAME,
-    logging: true,
-    synchronize: false,
-    entities: [],
+    synchronize: true,
+    entities: [User, Weight],
   });
 
   const app = express();
