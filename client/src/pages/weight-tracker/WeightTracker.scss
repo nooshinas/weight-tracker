@@ -1,0 +1,28 @@
+@import "./../../assets/styles/theme";
+
+.tracker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $padding-sm $padding-sm $padding-sm;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: $margin-md;
+
+  .tracker-action {
+    .btn-icon {
+      position: relative;
+      padding-right: $padding-sm;
+      top: 2px;
+
+      @media screen and (max-width: calc(#{$screen-xs} - 1px)) {
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: calc(#{$screen-xs} - 1px)) {
+      .btn-title {
+        display: none;
+      }
+    }
+  }
+}
