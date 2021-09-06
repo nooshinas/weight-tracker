@@ -1,9 +1,11 @@
 import express from "express";
 import cors from "cors";
 import { graphqlHTTP } from "express-graphql";
-import { GraphQLSchema } from "graphql";
 import { createConnection } from "typeorm";
 import dotenv from "dotenv";
+import { schema } from "./schema";
+import { User } from "./entities/User";
+import { Weight } from "./entities/Weight";
 
 const main = async () => {
   dotenv.config();
@@ -27,13 +29,13 @@ const main = async () => {
   app.use(
     "/graphql",
     graphqlHTTP({
-      schema: new GraphQLSchema({}),
+      schema,
       graphiql: true,
     })
   );
 
-  const PORT = process.env.PORT || 4000;
-  app.listen(4000, () => console.log(`Server is running on port ${PORT}`));
+  const PORT = process.env.NODE_PORT || 4001;
+  app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 };
 
 main().catch((err) => console.log(err));
